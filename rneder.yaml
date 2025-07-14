@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: airline-demand-app
+    env: python
+    buildCommand: ""
+    startCommand: python app.py
+    envVars:
+      - key: AVIATIONSTACK_API_KEY
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
